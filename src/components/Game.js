@@ -55,6 +55,7 @@ function Game({ api }) {
         <div
           onClick={() => {
             if (!stashedPic) {
+              setToast({ ...toast, show: false })
               setStashedPic({ photo: currentPhoto, answer: answer })
               setCurrentPhoto(toast.photo)
               setAnswer(toast.answer)
