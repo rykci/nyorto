@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { createApi } from "unsplash-js"
 import Game from "./components/Game"
@@ -9,6 +9,9 @@ const unsplashApi = createApi({
 })
 
 function App() {
+  useEffect(() => {
+    document.title = "NY or TO"
+  }, [])
   return (
     <Router>
       <Routes>
