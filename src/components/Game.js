@@ -62,7 +62,7 @@ function Game({ api }) {
           }}
           className={`${
             toast.result ? "bg-green-500" : "bg-red-500"
-          } cursor-pointer fixed top-4 text-center p-8 px-16 opacity-80 text-white font-bold rounded-xl`}
+          } cursor-pointer fixed top-4 text-center p-4 px-8 md:p-8 md:px-16 opacity-80 text-white font-bold rounded-xl`}
         >
           {toast.result ? "Correct" : "Incorrect"}
         </div>
